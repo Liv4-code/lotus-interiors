@@ -1,0 +1,22 @@
+{
+  "name": "lotus-interiors",
+  "version": "1.0.0",
+  "description": "A website used to display information on product offerings made by an interior design company.",
+  "main": "index.js",
+  "scripts": {
+    "test": "\"echo \\\"Error: no test specified\\\" && exit 1\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Liv4-code/lotus-interiors.git"
+  },
+  "keywords": [
+    "[]"
+  ],
+  "author": "Olivia Scholtz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Liv4-code/lotus-interiors/issues"
+  },
+  "homepage": "https://github.com/Liv4-code/lotus-interiors#readme"
+}
