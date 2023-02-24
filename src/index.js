@@ -1,18 +1,27 @@
-import { Router } from "./router.js";
+const routes = {
+    "/": "home",
+    "/about": "about",
+    "/services": "services",
+    "/contact": "contact",
+};
 
-const router = new Router();
+const router = new Router(routes);
 
-router.addRoute("/", () => {
-    // Code to render the home page
-});
+// import { Router } from "./router.js";
 
-router.addRoute("/about", () => {
-    // Code to render the about page
-});
+// const router = new Router();
 
-router.addRoute("/contact", () => {
-    // Code to render the contact page
-});
+// router.addRoute("/", () => {
+//     // Code to render the home page
+// });
 
-// Start the router
-router.init();
+// router.addRoute("/about", () => {
+//     // Code to render the about page
+// });
+
+// router.addRoute("/contact", () => {
+//     // Code to render the contact page
+// });
+
+// // Start the router
+// router.init();
