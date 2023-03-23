@@ -1,2 +1,12 @@
 @forward "globals";
 @forward "layout";
+
+header {
+    position: fixed;
+
+    nav {
+        width: 100vw;
+        height: 20%;
+        background-color: var(--secondary-color);
+    }
+}

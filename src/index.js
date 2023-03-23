@@ -1,6 +1,7 @@
-const routes = {
-    "/": "home",
-    "/about": "about",
-    "/services": "services",
-    "/contact": "contact",
-};
+// import Home from "./home";
+
+// const element = document.querySelector(".main");
+// const html = Home;
+// element.textContent = html;
+
+// element.appendChild(element);
