@@ -1,0 +1,37 @@
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    font-family: "Bona Nova", serif;
+    color: var(--font-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 110%;
+    margin-top: 0;
+}
+
+p {
+    margin: 0;
+}
+
+a,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+:root {
+    --background-color: rgb(232, 214, 196);
+    --font-color: rgb(38, 38, 38);
+}
+
+/*# sourceMappingURL=main.css.map */
