@@ -41,8 +41,61 @@ a:active {
 header {
   position: fixed;
 }
-header nav {
+header .navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
   width: 100vw;
   height: 20%;
   background-color: var(--secondary-color);
+  box-shadow: 0 2px 7px rgba(61, 61, 61, 0.4);
+}
+header .navbar__logo {
+  width: 90px;
+  height: 75px;
+}
+header .navbar__down-arrow {
+  width: 90px;
+  height: 75px;
+  font-size: xx-large;
+  text-align: center;
+}
+header .navbar__down-arrow:hover {
+  cursor: pointer;
+}
+header .navbar__down-arrow:hover svg {
+  animation: arrowDown 1s 2 forwards;
+}
+header .navbar__dropdown {
+  position: absolute;
+  top: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  background-color: var(--secondary-color);
+}
+header .navbar__dropdown a {
+  padding: 3%;
+}
+header .navbar__dropdown a:hover {
+  cursor: pointer;
+}
+
+@keyframes arrowDown {
+  from {
+    translate: 0px 0px;
+  }
+  to {
+    translate: 0px 10px;
+  }
+}
+@keyframes arrowRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -15,17 +15,27 @@
     </head>
     <body>
         <header>
-            <nav>
-                <div>
-                    <img
-                        src="./assets/lotuslogo.jpeg"
-                        alt="Company Logo Lotus"
-                    />
+            <nav class="navbar">
+                <img
+                    class="navbar__logo"
+                    src="./assets/lotuslogo.jpeg"
+                    alt="Company Logo Lotus"
+                />
+                <div class="navbar__down-arrow">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="2em"
+                        height="2em"
+                        viewBox="0 0 24 24"
+                    >
+                        <path fill="currentColor" d="m12 15l-5-5h10l-5 5Z" />
+                    </svg>
                 </div>
-                <div>X</div>
-                <a>Home</a>
-                <a>About</a>
-                <a>Contact</a>
+                <div class="navbar__dropdown">
+                    <a>Home</a>
+                    <a>About</a>
+                    <a>Contact</a>
+                </div>
             </nav>
         </header>
         <main class="main">

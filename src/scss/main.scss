@@ -4,9 +4,71 @@
 header {
     position: fixed;
 
-    nav {
+    .navbar {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
         width: 100vw;
         height: 20%;
         background-color: var(--secondary-color);
+        box-shadow: 0 2px 7px rgba(61, 61, 61, 0.4);
+
+        &__logo {
+            width: 90px;
+            height: 75px;
+        }
+
+        &__down-arrow {
+            width: 90px;
+            height: 75px;
+            font-size: xx-large;
+            text-align: center;
+        }
+
+        &__down-arrow:hover {
+            cursor: pointer;
+
+            svg {
+                animation: arrowDown 1s 2 forwards;
+            }
+        }
+
+        &__dropdown {
+            // display: none;
+            position: absolute;
+            top: 75px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            background-color: var(--secondary-color);
+
+            a {
+                padding: 3%;
+            }
+
+            a:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@keyframes arrowDown {
+    from {
+        translate: 0px 0px;
+    }
+    to {
+        translate: 0px 10px;
+    }
+}
+
+@keyframes arrowRotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(180deg);
     }
 }
