@@ -9,13 +9,13 @@ header {
         display: flex;
         justify-content: space-between;
         width: 100vw;
-        height: 20%;
+        height: 10vh;
         background-color: var(--secondary-color);
         box-shadow: 0 2px 7px rgba(61, 61, 61, 0.4);
 
         &__logo {
             width: 90px;
-            height: 75px;
+            height: 100%;
         }
 
         &__down-arrow {
@@ -34,22 +34,40 @@ header {
         }
 
         &__dropdown {
-            // display: none;
+            display: none;
             position: absolute;
             top: 75px;
-            display: flex;
+            // display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             width: 100vw;
             background-color: var(--secondary-color);
 
-            a {
+            .navbar__link {
+                width: 100%;
+                text-align: center;
                 padding: 3%;
             }
 
-            a:hover {
+            .navbar__link:hover {
                 cursor: pointer;
+            }
+
+            #about {
+                background-color: #c6a5c5;
+            }
+
+            #services {
+                background-color: #ae84ad;
+            }
+
+            #projects {
+                background-color: #a0709f;
+            }
+
+            #contact {
+                background-color: #8d5e8c;
             }
         }
     }
