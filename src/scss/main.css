@@ -8,7 +8,7 @@ body {
   padding: 0;
   background-color: var(--background-color);
   font-family: "Bona Nova", serif;
-  color: var(--font-color);
+  color: var(--font-color-dark);
 }
 
 button {
@@ -21,6 +21,12 @@ h3,
 h4 {
   line-height: 110%;
   margin: 0;
+}
+
+h2 {
+  font-size: 1.9em;
+  text-align: center;
+  padding: 10%;
 }
 
 h3 {
@@ -49,7 +55,8 @@ button {
   --primary-color: #6d4f6c;
   --secondary-color: #343434;
   --background-color: rgb(245, 245, 245);
-  --font-color: rgb(76, 76, 76);
+  --font-color-dark: rgb(76, 76, 76);
+  --font-color-light: rgb(239, 239, 239);
   --button-font-color: #e6e6e6;
   --card-color: #e6e6e6;
 }
@@ -102,6 +109,13 @@ button {
     flex-direction: row;
     justify-content: space-around;
   }
+}
+
+.about-section {
+  margin-top: 35%;
+  padding: 5%;
+  background-color: var(--secondary-color);
+  color: var(--font-color-light);
 }
 
 header {
