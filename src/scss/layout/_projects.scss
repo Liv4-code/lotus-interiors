@@ -1,0 +1,11 @@
+@import "../globals";
+
+.projects-section {
+    @include flexCenter;
+    background-color: var(--secondary-color);
+    color: var(--font-color-light);
+
+    .projects-section__title--underline {
+        @include triangleUnderline;
+    }
+}

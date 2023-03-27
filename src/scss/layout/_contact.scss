@@ -1,0 +1,28 @@
+@import "../globals";
+
+.contact-section {
+    @include flexCenter;
+
+    .contact-section__title--underline {
+        @include triangleUnderline;
+        border-top: 8px solid var(--secondary-color);
+    }
+
+    .contact-section__container {
+        @include flexCenter;
+    }
+
+    .contact-section__container div {
+        width: 75%;
+        margin-bottom: 10%;
+        padding: 10% 4%;
+        background-color: var(--card-color);
+        box-shadow: -5px -5px 10px rgba($color: #2e2e2e, $alpha: 0.6);
+        border-radius: 2px;
+    }
+
+    .contact-section__container img {
+        width: 100vw;
+        margin-top: 10%;
+    }
+}
