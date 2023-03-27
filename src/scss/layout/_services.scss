@@ -2,6 +2,7 @@
 
 .services-section {
     @include flexCenter;
+    padding: 8%;
 
     .services-section__title--underline {
         @include triangleUnderline;
@@ -14,7 +15,6 @@
     }
 
     .card {
-        width: 75%;
         height: 55vh;
         margin: 5%;
         background-color: var(--primary-color);
@@ -41,6 +41,10 @@
     //     height: 100px;
     //     z-index: -1;
     // }
+
+    .card__text {
+        padding: 6%;
+    }
 
     @media (min-width: $breakpoint-laptop) {
         height: 100vh;

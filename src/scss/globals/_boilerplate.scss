@@ -1,4 +1,5 @@
 $breakpoint-laptop: 950px;
+$breakpoint-cellphone: 600px;
 
 @use "../util";
 
@@ -33,4 +34,14 @@ body {
 
 button {
     border: 0;
+}
+
+pre {
+    margin: 12% 0 12% 0;
+}
+
+footer {
+    @include flexCenter;
+    background-color: var(--primary-color);
+    color: var(--font-color-light);
 }
