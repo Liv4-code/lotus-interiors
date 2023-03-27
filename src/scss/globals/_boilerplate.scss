@@ -1,5 +1,12 @@
 @use "../util";
 
+@mixin flexCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 html {
     box-sizing: border-box;
     font-size: 100%;

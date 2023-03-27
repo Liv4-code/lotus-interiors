@@ -1,6 +1,36 @@
+@import "../globals";
+
 .about-section {
+    @include flexCenter;
+    height: 100vh;
     margin-top: 35%;
     padding: 5%;
     background-color: var(--secondary-color);
     color: var(--font-color-light);
+}
+
+.about-section__title {
+    margin: 2%;
+}
+
+.about-section__title--underline {
+    width: 0;
+    height: 0;
+    border-left: 120px solid transparent;
+    border-right: 120px solid transparent;
+    border-top: 8px solid rgb(255, 255, 255);
+    margin-bottom: 25%;
+}
+
+.about-section__content {
+    @include flexCenter;
+    text-align: center;
+
+    div {
+        padding: 4%;
+    }
+
+    // @media (max-width: $breakpoint-xsml-cellphone) {
+    //     flex-direction: row;
+    // }
 }

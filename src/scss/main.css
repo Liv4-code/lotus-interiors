@@ -26,11 +26,12 @@ h4 {
 h2 {
   font-size: 1.9em;
   text-align: center;
-  padding: 10%;
+  padding: 10% 10% 1% 10%;
 }
 
 h3 {
-  font-size: 1.2em;
+  font-size: 1.4em;
+  margin-bottom: 2%;
 }
 
 p {
@@ -111,11 +112,104 @@ button {
   }
 }
 
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  font-family: "Bona Nova", serif;
+  color: var(--font-color-dark);
+}
+
+button {
+  border: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 110%;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.9em;
+  text-align: center;
+  padding: 10% 10% 1% 10%;
+}
+
+h3 {
+  font-size: 1.4em;
+  margin-bottom: 2%;
+}
+
+p {
+  margin: 0;
+  font-size: 1.1em;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: larger;
+}
+
+button {
+  font-family: "Bona Nova", serif;
+  font-size: 0.9em;
+}
+
+:root {
+  --primary-color: #6d4f6c;
+  --secondary-color: #343434;
+  --background-color: rgb(245, 245, 245);
+  --font-color-dark: rgb(76, 76, 76);
+  --font-color-light: rgb(239, 239, 239);
+  --button-font-color: #e6e6e6;
+  --card-color: #e6e6e6;
+}
+
 .about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   margin-top: 35%;
   padding: 5%;
   background-color: var(--secondary-color);
   color: var(--font-color-light);
+}
+
+.about-section__title {
+  margin: 2%;
+}
+
+.about-section__title--underline {
+  width: 0;
+  height: 0;
+  border-left: 120px solid transparent;
+  border-right: 120px solid transparent;
+  border-top: 8px solid rgb(255, 255, 255);
+  margin-bottom: 25%;
+}
+
+.about-section__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.about-section__content div {
+  padding: 4%;
 }
 
 header {
@@ -192,4 +286,5 @@ header .navbar__dropdown #contact {
   to {
     transform: rotate(180deg);
   }
-}/*# sourceMappingURL=main.css.map */
+}
+@export flexCenter;/*# sourceMappingURL=main.css.map */
