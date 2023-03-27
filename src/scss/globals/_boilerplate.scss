@@ -1,3 +1,5 @@
+$breakpoint-laptop: 950px;
+
 @use "../util";
 
 @mixin flexCenter {
@@ -5,6 +7,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+@mixin triangleUnderline {
+    width: 0;
+    height: 0;
+    border-left: 120px solid transparent;
+    border-right: 120px solid transparent;
+    border-top: 8px solid rgb(255, 255, 255);
+    margin-bottom: 15%;
 }
 
 html {
