@@ -11,6 +11,16 @@ body {
   color: var(--font-color-dark);
 }
 
+header {
+  position: relative;
+  z-index: 1;
+}
+
+main {
+  position: relative;
+  z-index: 0;
+}
+
 button {
   border: 0;
 }
@@ -144,6 +154,16 @@ body {
   color: var(--font-color-dark);
 }
 
+header {
+  position: relative;
+  z-index: 1;
+}
+
+main {
+  position: relative;
+  z-index: 0;
+}
+
 button {
   border: 0;
 }
@@ -261,6 +281,16 @@ body {
   color: var(--font-color-dark);
 }
 
+header {
+  position: relative;
+  z-index: 1;
+}
+
+main {
+  position: relative;
+  z-index: 0;
+}
+
 button {
   border: 0;
 }
@@ -355,23 +385,47 @@ pre {
   text-align: center;
 }
 .services-section .card {
-  width: 70vw;
-  height: 60vh;
+  width: 300px;
+  height: 480px;
   margin: 5%;
   background-color: var(--card-color);
   box-shadow: 4px 4px 8px rgba(76, 76, 76, 0.8);
-  border-radius: 8px;
+  border-radius: 3px;
 }
 .services-section .card__title {
+  position: relative;
+  width: 100%;
+  height: 60%;
+}
+.services-section .card__title div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
   width: inherit;
+  height: 100%;
+  background-color: rgba(40, 40, 40, 0.6);
+  border-radius: 3px;
+}
+.services-section .card__title h3 {
+  color: var(--font-color-light);
 }
 .services-section .card__title img {
-  width: inherit;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
 }
 .services-section .card__text {
-  padding: 6%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40%;
+}
+.services-section .card__text p {
+  padding: 7%;
 }
 @media (min-width: 950px) {
   .services-section {
@@ -390,6 +444,16 @@ body {
   background-color: var(--background-color);
   font-family: "Bona Nova", serif;
   color: var(--font-color-dark);
+}
+
+header {
+  position: relative;
+  z-index: 1;
+}
+
+main {
+  position: relative;
+  z-index: 0;
 }
 
 button {
@@ -490,6 +554,16 @@ body {
   background-color: var(--background-color);
   font-family: "Bona Nova", serif;
   color: var(--font-color-dark);
+}
+
+header {
+  position: relative;
+  z-index: 1;
+}
+
+main {
+  position: relative;
+  z-index: 0;
 }
 
 button {
@@ -609,6 +683,16 @@ body {
   color: var(--font-color-dark);
 }
 
+header {
+  position: relative;
+  z-index: 1;
+}
+
+main {
+  position: relative;
+  z-index: 0;
+}
+
 button {
   border: 0;
 }
@@ -683,8 +767,6 @@ header {
   position: fixed;
 }
 header .navbar {
-  position: relative;
-  z-index: 1;
   display: flex;
   justify-content: space-between;
   width: 100vw;

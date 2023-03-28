@@ -15,35 +15,46 @@
     }
 
     .card {
-        width: 70vw;
-        height: 60vh;
+        width: 300px;
+        height: 480px;
         margin: 5%;
         background-color: var(--card-color);
         box-shadow: 4px 4px 8px rgba(76, 76, 76, 0.8);
-        border-radius: 8px;
+        border-radius: 3px;
     }
 
     .card__title {
-        // position: relative;
-        // z-index: 0;
-        width: inherit;
+        position: relative;
+        width: 100%;
+        height: 60%;
     }
 
-    // .card__title h3 {
-    //     position: absolute;
-    //     bottom: 50px;
-    //     left: 50px;
-    //     z-index: 0;
-    // }
+    .card__title div {
+        @include flexCenter;
+        position: absolute;
+        width: inherit;
+        height: 100%;
+        background-color: rgba(40, 40, 40, 0.6);
+        border-radius: 3px;
+    }
+
+    .card__title h3 {
+        color: var(--font-color-light);
+    }
 
     .card__title img {
-        width: inherit;
-        border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
+        width: 100%;
+        height: 100%;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
     }
 
     .card__text {
-        padding: 6%;
+        @include flexCenter;
+        height: 40%;
+        p {
+            padding: 7%;
+        }
     }
 
     @media (min-width: $breakpoint-laptop) {
