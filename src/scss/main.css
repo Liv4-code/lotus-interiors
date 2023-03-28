@@ -783,12 +783,17 @@ header .navbar__down-arrow {
   height: 75px;
   font-size: xx-large;
   text-align: center;
+  color: var(--font-color-light);
+}
+header .navbar__down-arrow svg {
+  transition: translate 500ms ease-in-out;
+  margin-top: 6%;
 }
 header .navbar__down-arrow:hover {
   cursor: pointer;
 }
 header .navbar__down-arrow:hover svg {
-  animation: arrowDown 1s 2 forwards;
+  translate: 0px 8px;
 }
 header .navbar__dropdown {
   display: flex;
@@ -850,21 +855,4 @@ footer .footer-copyright {
   width: 100%;
   height: 100%;
   font-size: 0.8em;
-}
-
-@keyframes arrowDown {
-  from {
-    translate: 0px 0px;
-  }
-  to {
-    translate: 0px 10px;
-  }
-}
-@keyframes arrowRotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(180deg);
-  }
 }/*# sourceMappingURL=main.css.map */
