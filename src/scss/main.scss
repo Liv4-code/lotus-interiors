@@ -43,7 +43,7 @@ header {
             @include flexCenter;
             display: none;
             position: absolute;
-            top: 75px;
+            top: 10vh;
             width: 100vw;
             background-color: var(--secondary-color);
 
@@ -51,29 +51,37 @@ header {
                 width: 100%;
                 text-align: center;
                 padding: 3%;
+                color: var(--font-color-light);
             }
 
             .navbar__link:hover {
                 cursor: pointer;
-            }
-
-            #about {
                 background-color: #c6a5c5;
             }
 
-            #services {
-                background-color: #ae84ad;
-            }
+            // #about {
+            //     background-color: #c6a5c5;
+            // }
 
-            #projects {
-                background-color: #a0709f;
-            }
+            // #services {
+            //     background-color: #ae84ad;
+            // }
 
-            #contact {
-                background-color: #8d5e8c;
-            }
+            // #projects {
+            //     background-color: #a0709f;
+            // }
+
+            // #contact {
+            //     background-color: #8d5e8c;
+            // }
         }
     }
+
+    // @media (max-width: $breakpoint-tablet) {
+    //     &__down-arrow svg:active {
+    //         translate: 0px 8px;
+    //     }
+    // }
 }
 
 footer {
@@ -107,21 +115,3 @@ footer {
         font-size: 0.8em;
     }
 }
-
-// @keyframes arrowDown {
-//     from {
-//         translate: 0px 0px;
-//     }
-//     to {
-//         translate: 0px 10px;
-//     }
-// }
-
-// @keyframes arrowRotate {
-//     from {
-//         transform: rotate(0deg);
-//     }
-//     to {
-//         transform: rotate(180deg);
-//     }
-// }

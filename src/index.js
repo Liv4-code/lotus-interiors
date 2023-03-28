@@ -1,7 +1,12 @@
-// import Home from "./home";
+const navDownArrow = document.querySelector(".navbar__down-arrow");
 
-// const element = document.querySelector(".main");
-// const html = Home;
-// element.textContent = html;
+navDownArrow.addEventListener("click", () => {
+    const navDropdown = document.querySelector(".navbar__dropdown");
+    console.log(navDropdown.childNodes);
 
-// element.appendChild(element);
+    if (navDropdown.style.display === "flex") {
+        navDropdown.style.display = "none";
+    } else {
+        navDropdown.style.display = "flex";
+    }
+});

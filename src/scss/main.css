@@ -262,7 +262,7 @@ pre {
 .about-section .about-section__content div {
   padding: 4%;
 }
-@media (min-width: 950px) {
+@media (min-width: 1000px) {
   .about-section .about-section__content {
     flex-direction: row !important;
   }
@@ -427,7 +427,7 @@ pre {
 .services-section .card__text p {
   padding: 7%;
 }
-@media (min-width: 950px) {
+@media (min-width: 1000px) {
   .services-section {
     height: 100vh;
   }
@@ -802,7 +802,7 @@ header .navbar__dropdown {
   align-items: center;
   display: none;
   position: absolute;
-  top: 75px;
+  top: 10vh;
   width: 100vw;
   background-color: var(--secondary-color);
 }
@@ -810,21 +810,11 @@ header .navbar__dropdown .navbar__link {
   width: 100%;
   text-align: center;
   padding: 3%;
+  color: var(--font-color-light);
 }
 header .navbar__dropdown .navbar__link:hover {
   cursor: pointer;
-}
-header .navbar__dropdown #about {
   background-color: #c6a5c5;
-}
-header .navbar__dropdown #services {
-  background-color: #ae84ad;
-}
-header .navbar__dropdown #projects {
-  background-color: #a0709f;
-}
-header .navbar__dropdown #contact {
-  background-color: #8d5e8c;
 }
 
 footer {
