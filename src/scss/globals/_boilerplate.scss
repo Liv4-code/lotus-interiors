@@ -48,6 +48,10 @@ button {
     border: 0;
 }
 
+pre {
+    margin: 0;
+}
+
 footer {
     @include flexCenter;
     background-color: var(--primary-color);
