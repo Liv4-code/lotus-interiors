@@ -2,7 +2,6 @@
 
 .services-section {
     @include flexCenter;
-    padding: 8%;
 
     .services-section__title--underline {
         @include triangleUnderline;
@@ -57,7 +56,7 @@
         }
     }
 
-    @media (min-width: $breakpoint-laptop) {
-        height: 100vh;
-    }
+    // @media (max-width: $breakpoint-laptop) {
+    //     height: 100vh;
+    // }
 }
