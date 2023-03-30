@@ -418,6 +418,29 @@ pre {
     font-size: 3vw;
   }
 }
+@media (min-width: 1000px) {
+  .home-section {
+    height: unset;
+    flex-direction: row;
+  }
+  .home-section__img {
+    height: 97vh;
+  }
+  .home-section__introduction {
+    margin: 100px 170px 0 0;
+    width: 80%;
+    padding: 30% 15%;
+  }
+  .home-section__title--first-line {
+    font-size: 4.8vw;
+  }
+  .home-section__title--scnd-line {
+    font-size: 2.4vw;
+  }
+  .home-section a {
+    margin-right: 170px;
+  }
+}
 
 html {
   box-sizing: border-box;
