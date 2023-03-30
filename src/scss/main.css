@@ -518,7 +518,7 @@ pre {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 35%;
+  margin-top: 20%;
   background-color: var(--secondary-color);
   color: var(--font-color-light);
 }
@@ -536,7 +536,7 @@ pre {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0 11% 9% 8%;
+  padding: 0 11% 9% 11%;
 }
 .about-section .about-section__content div {
   padding: 4%;
@@ -544,6 +544,7 @@ pre {
 @media (min-width: 1000px) {
   .about-section .about-section__content {
     flex-direction: row !important;
+    padding: 0 11% 9% 8%;
   }
 }
 

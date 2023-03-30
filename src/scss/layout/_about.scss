@@ -2,7 +2,7 @@
 
 .about-section {
     @include flexCenter;
-    margin-top: 35%;
+    margin-top: 20%;
     background-color: var(--secondary-color);
     color: var(--font-color-light);
 
@@ -13,7 +13,7 @@
     .about-section__content {
         @include flexCenter;
         text-align: center;
-        padding: 0 11% 9% 8%;
+        padding: 0 11% 9% 11%;
 
         div {
             padding: 4%;
@@ -21,6 +21,7 @@
 
         @media (min-width: $breakpoint-laptop) {
             flex-direction: row !important;
+            padding: 0 11% 9% 8%;
         }
     }
 }
