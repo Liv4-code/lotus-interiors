@@ -1,6 +1,6 @@
 $breakpoint-laptop: 1000px;
 $breakpoint-tablet: 768px;
-$breakpoint-cellphone: 600px;
+$breakpoint-cellphone: 500px;
 
 @use "../util";
 
@@ -46,10 +46,6 @@ main {
 
 button {
     border: 0;
-}
-
-pre {
-    margin: 0;
 }
 
 footer {

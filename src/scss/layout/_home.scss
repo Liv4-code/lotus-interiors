@@ -1,50 +1,51 @@
+@import "../globals";
+
 .home-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flexCenter;
     width: 100vw;
-    height: 100vh;
 
-    .home-section__img {
-        width: 100%;
-        height: 90%;
-        box-shadow: 0 -5px 6px rgba($color: #2e2e2e, $alpha: 0.9);
-
-        @media (min-width: "900px") {
-            width: 35%;
-            box-shadow: -5px -5px 10px rgba($color: #2e2e2e, $alpha: 0.6);
-        }
+    & > div {
+        @include flexCenter;
     }
 
-    .home-section__introduction {
-        width: 80%;
-        margin-top: -45%;
-        padding: 15% 5%;
+    &__img {
+        margin-top: 30px;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__introduction {
+        width: 100%;
+        margin-top: -20%;
+        padding: 18% 7%;
         background-color: var(--card-color);
         box-shadow: -5px -5px 10px rgba($color: #2e2e2e, $alpha: 0.6);
         border-radius: 2px;
+
+        pre {
+            margin: 0;
+        }
     }
 
-    .home-section__title {
+    &__title {
         font-weight: 100;
         line-height: 1.3;
         text-align: center;
     }
 
-    .home-section__title--first-line {
+    &__title--first-line {
         font-size: 11vw;
     }
 
-    .home-section__title--scnd-line {
+    &__title--scnd-line {
         font-size: 8vw;
     }
 
     a {
-        margin-top: -6%;
+        margin-top: -18px;
     }
 
-    .home-section__button {
+    &__button {
         padding: 4%;
         background-color: var(--primary-color);
         border-radius: 2px;
@@ -52,12 +53,44 @@
         width: 200px;
     }
 
-    .home-section__button:hover {
+    &__button:hover {
         cursor: pointer;
     }
 
-    @media (min-width: "900px") {
-        flex-direction: row;
-        justify-content: space-around;
+    @media (min-width: $breakpoint-cellphone) {
+        &__img {
+            width: 80%;
+            height: 80%;
+        }
+
+        &__title--first-line {
+            font-size: 8vw;
+        }
+
+        &__title--scnd-line {
+            font-size: 5vw;
+        }
+    }
+
+    @media (min-width: $breakpoint-tablet) {
+        height: 95vh;
+
+        &__img {
+            width: 70vw;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        &__introduction {
+            padding: 20% 15%;
+        }
+
+        &__title--first-line {
+            font-size: 5.5vw;
+        }
+
+        &__title--scnd-line {
+            font-size: 3vw;
+        }
     }
 }
