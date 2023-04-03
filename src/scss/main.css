@@ -735,9 +735,29 @@ pre {
 .services-section .card__text p {
   padding: 7%;
 }
-@media (min-width: 1000px) {
+@media (min-width: 768px) {
+  .services-section {
+    padding: 2%;
+  }
   .services-section__content {
-    flex-direction: row;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(2, auto);
+    grid-auto-columns: 290px;
+    grid-gap: 6%;
+    padding: 0 11% 9% 8%;
+  }
+}
+@media (min-width: 1190px) {
+  .services-section {
+    padding: 2% 2% 12% 2%;
+  }
+  .services-section__content {
+    box-sizing: border-box;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 4%;
+    padding: 0;
   }
   .services-section .card {
     margin: 2%;
