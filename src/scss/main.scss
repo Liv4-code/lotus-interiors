@@ -97,4 +97,17 @@ footer {
         height: 100%;
         font-size: 0.8em;
     }
+
+    @media (min-width: $breakpoint-laptop) {
+        .footer-contact {
+            box-sizing: border-box;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 7% 7% 7% 6%;
+        }
+
+        .footer-copyright {
+            padding: 2% 0 2% 0;
+        }
+    }
 }
