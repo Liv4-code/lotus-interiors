@@ -14,13 +14,6 @@ navDownArrow.addEventListener("click", () => {
 // Removing dropdown when viewport width is resized to tablet or larger
 viewPort.addEventListener("resize", () => {
     if (window.visualViewport.width >= 768) {
-        console.log("Wah!");
         navDropdown.style.display = "none";
     }
 });
-
-// Removing dropdown if viewport width is size of tablet or larger
-if (viewPort.width >= 768) {
-    console.log("Wah!");
-    navDropdown.style.display = "none";
-}
