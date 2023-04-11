@@ -1134,8 +1134,11 @@ header .navbar {
   background-color: var(--secondary-color);
   box-shadow: 0 2px 7px rgba(61, 61, 61, 0.4);
 }
+header .navbar__auto {
+  display: none;
+}
 header .navbar__logo {
-  width: 85px;
+  width: unset;
   height: 100%;
 }
 header .navbar__down-arrow {
@@ -1174,6 +1177,32 @@ header .navbar__dropdown .navbar__link {
 header .navbar__dropdown .navbar__link:hover {
   cursor: pointer;
   background-color: #c6a5c5;
+}
+@media (min-width: 768px) {
+  header .navbar {
+    background-color: var(--background-color);
+    border-bottom: 0.8px solid var(--secondary-color);
+  }
+  header .navbar__down-arrow {
+    display: none;
+  }
+  header .navbar__dropdown {
+    display: none;
+  }
+  header .navbar__auto {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50vw;
+    background-color: var(--background-color);
+  }
+  header .navbar__auto .navbar__link {
+    padding: 1%;
+    color: var(--font-color-dark);
+  }
+  header .navbar__auto .navbar__link:hover {
+    color: #c6a5c5;
+  }
 }
 
 footer {

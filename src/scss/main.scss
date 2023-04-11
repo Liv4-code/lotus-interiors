@@ -13,8 +13,12 @@ header {
         background-color: var(--secondary-color);
         box-shadow: 0 2px 7px rgba(61, 61, 61, 0.4);
 
+        &__auto {
+            display: none;
+        }
+
         &__logo {
-            width: 85px;
+            width: unset;
             height: 100%;
         }
 
@@ -60,11 +64,37 @@ header {
         }
     }
 
-    // @media (max-width: $breakpoint-tablet) {
-    //     &__down-arrow svg:active {
-    //         translate: 0px 8px;
-    //     }
-    // }
+    @media (min-width: $breakpoint-tablet) {
+        .navbar {
+            background-color: var(--background-color);
+            border-bottom: 0.8px solid var(--secondary-color);
+        }
+
+        .navbar__down-arrow {
+            display: none;
+        }
+
+        .navbar__dropdown {
+            display: none;
+        }
+
+        .navbar__auto {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 50vw;
+            background-color: var(--background-color);
+
+            .navbar__link {
+                padding: 1%;
+                color: var(--font-color-dark);
+            }
+
+            .navbar__link:hover {
+                color: #c6a5c5;
+            }
+        }
+    }
 }
 
 footer {
