@@ -23,23 +23,13 @@ header {
         }
 
         &__down-arrow {
-            width: 90px;
-            height: 75px;
-            font-size: xx-large;
-            text-align: center;
+            @include flexCenter;
+            width: 20vw;
             color: var(--font-color-light);
-
-            svg {
-                transition: translate 500ms ease-in-out;
-            }
         }
 
         &__down-arrow:hover {
             cursor: pointer;
-
-            svg {
-                translate: 0px 8px;
-            }
         }
 
         &__dropdown {

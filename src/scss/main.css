@@ -1222,20 +1222,15 @@ header .navbar__logo {
   height: 100%;
 }
 header .navbar__down-arrow {
-  width: 90px;
-  height: 75px;
-  font-size: xx-large;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
   color: var(--font-color-light);
-}
-header .navbar__down-arrow svg {
-  transition: translate 500ms ease-in-out;
 }
 header .navbar__down-arrow:hover {
   cursor: pointer;
-}
-header .navbar__down-arrow:hover svg {
-  translate: 0px 8px;
 }
 header .navbar__dropdown {
   display: flex;
