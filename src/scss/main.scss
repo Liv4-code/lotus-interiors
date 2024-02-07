@@ -24,8 +24,7 @@ header {
 
         &__down-arrow {
             @include flexCenter;
-            background-color: #c6a5c5;
-            width: 50vw;
+            width: 20vw;
             color: var(--font-color-light);
         }
 
@@ -60,10 +59,6 @@ header {
             background-color: var(--background-color);
             border-bottom: 0.8px solid var(--secondary-color);
         }
-
-        // .navbar__down-arrow {
-        //     display: none;
-        // }
 
         .navbar__dropdown {
             display: none;
